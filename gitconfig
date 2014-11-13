@@ -1,0 +1,25 @@
+[user]
+	name = Addison Huddy
+	email = addisonhuddy@gmail.com
+[alias]
+	st = status -sb
+	ci = commit
+	co = checkout
+[help]
+	autocorrect = 1
+[push]
+	default = tracking
+[branch]
+  autosetuprebase = always
+[branch "master"]
+	rebase = true
+[color]
+  diff = auto
+  interactive = auto
+  status = auto
+  ui = auto
+  branch = auto
+[core]
+	excludesfile = /Users/pivotal/.gitignore_global
+[credential]
+	helper = osxkeychain
