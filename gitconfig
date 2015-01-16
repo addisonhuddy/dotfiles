@@ -21,5 +21,10 @@
   branch = auto
 [core]
 	excludesfile = /Users/pivotal/.gitignore_global
+	editor = /usr/bin/vim
 [credential]
 	helper = osxkeychain
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f

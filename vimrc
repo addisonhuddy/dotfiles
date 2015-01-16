@@ -23,6 +23,10 @@ Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
 Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
+Bundle 'kchmck/vim-coffee-script'
 
 call vundle#end()
 
@@ -72,5 +76,3 @@ set laststatus=2
 set encoding=utf-8
 set t_Co=256
 let g:Powerline_symbols='fancy'
-
-
