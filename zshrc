@@ -9,7 +9,7 @@ ZSH_THEME="wedisagree"
 
 alias 261='cd Dropbox/osu/CS261/261Assignments'
 alias 271='cd Dropbox/osu/CS271/271Assignments'
-alias 6300='cd /Users/pivotal/Dropbox/GT/2015_Spring/CS6300'
+alias 6300='cd ~/Dropbox/GT/2015_Spring/CS6300'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
