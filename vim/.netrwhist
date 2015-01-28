@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/pivotal/.irssi'
 let g:netrw_dirhist_2='/Users/pivotal/Dropbox/codebox/exercises/Bloc/Sinatra'
 let g:netrw_dirhist_3='/Users/pivotal/.zsh'
+let g:netrw_dirhist_4='/Users/pivotal/workspace/blog'

@@ -61,7 +61,7 @@ set hlsearch
 
 " folding
 set foldenable
-
+set foldlevel=99
 " leader
 let mapleader=","
 
