@@ -8,6 +8,8 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="wedisagree"
 
 alias 6300="cd ~/Dropbox/GT/2015_Spring/CS6300"
+alias code="cd ~/Dropbox/codebox"
+alias gittrends="cd ~/Dropbox/codebox/gittrends"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -36,8 +38,13 @@ alias 6300="cd ~/Dropbox/GT/2015_Spring/CS6300"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
 export PATH="/usr/local/bin:$PATH"
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 chruby ruby-2.1.2
+
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home
+
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
