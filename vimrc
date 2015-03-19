@@ -1,6 +1,5 @@
 " Addison Huddy's .vimrc
 
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -13,7 +12,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
-Bundle 'tomasr/molokai' 
+Bundle 'tomasr/molokai'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'ervandew/supertab'
@@ -24,15 +23,18 @@ Bundle "garbas/vim-snipmate"
 Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-fugitive'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'Yggdroot/indentLine'
+Bundle 'fatih/vim-go'
+Bundle 'klen/python-mode'
 
 call vundle#end()
 
 " colors
 syntax enable
-colorscheme molokai 
+colorscheme molokai
 
 " indentation
 set expandtab
@@ -44,8 +46,7 @@ filetype plugin indent on " not sure about this one
 set nowrap
 
 " folding
-set foldlevel=99
-set foldmethod=syntax
+let g:vim_markdown_folding_disabled=1
 
 " UI
 set number
@@ -59,9 +60,6 @@ set showmatch
 set incsearch
 set hlsearch
 
-" folding
-set foldenable
-set foldlevel=99
 " leader
 let mapleader=","
 
@@ -76,3 +74,7 @@ set laststatus=2
 set encoding=utf-8
 set t_Co=256
 let g:Powerline_symbols='fancy'
+
+" backup stuff
+set nobackup
+set nowritebackup
