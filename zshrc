@@ -10,6 +10,8 @@ ZSH_THEME="wedisagree"
 alias 6300="cd ~/Dropbox/GT/2015_Spring/CS6300"
 alias code="cd ~/Dropbox/codebox"
 alias gittrends="cd ~/Dropbox/codebox/gittrends"
+alias gmacs='open -a /Applications/Emacs.app $1'
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
