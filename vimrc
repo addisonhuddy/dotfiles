@@ -7,30 +7,37 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Bundle 'gmarik/vundle'
-Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'tomasr/molokai'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'ervandew/supertab'
-Bundle 'bronson/vim-trailing-whitespace'
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle 'godlygeek/tabular'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-fugitive'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'Yggdroot/indentLine'
-Bundle 'fatih/vim-go'
-Bundle 'klen/python-mode'
+Plugin 'gmarik/vundle'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'ervandew/supertab'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-fugitive'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'Yggdroot/indentLine'
+Plugin 'fatih/vim-go'
+Plugin 'klen/python-mode'
+Plugin 'fatih/molokai'
+Plugin 'mattn/emmet-vim'
+Plugin 'tpope/surround'
+Plugin 'majutsushi/tagbar'
+Plugin 'pangloss/vim-javascript'
+
 
 call vundle#end()
+
+" filetype
+filetype plugin on
 
 " colors
 syntax enable
@@ -78,3 +85,12 @@ let g:Powerline_symbols='fancy'
 " backup stuff
 set nobackup
 set nowritebackup
+
+" nerdtree
+map <C-t> :NERDTreeToggle<CR>
+
+" tabbing buffers
+nnoremap <C-o> :bnext<CR>
+nnoremap <C-i> :bprevious<CR>
+
+set backspace=2

@@ -42,3 +42,7 @@ tags
  *.out
  *.app
 
+# Vim swap files
+ *~
+ *.swp
+ *.swo
