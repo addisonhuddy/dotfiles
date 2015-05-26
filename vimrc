@@ -12,7 +12,6 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'ervandew/supertab'
 Plugin 'bronson/vim-trailing-whitespace'
@@ -27,12 +26,12 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'Yggdroot/indentLine'
 Plugin 'fatih/vim-go'
 Plugin 'klen/python-mode'
-Plugin 'fatih/molokai'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'mattn/emmet-vim'
-Plugin 'tpope/surround'
+Plugin 'tpope/vim-surround'
 Plugin 'majutsushi/tagbar'
 Plugin 'pangloss/vim-javascript'
-
+Plugin 'bling/vim-airline'
 
 call vundle#end()
 
@@ -41,7 +40,8 @@ filetype plugin on
 
 " colors
 syntax enable
-colorscheme molokai
+set background=dark
+colorscheme solarized
 
 " indentation
 set expandtab
@@ -54,6 +54,9 @@ set nowrap
 
 " folding
 let g:vim_markdown_folding_disabled=1
+
+" python
+let g:pymode_rope=0
 
 " UI
 set number
@@ -71,16 +74,10 @@ set hlsearch
 let mapleader=","
 
 " CtrlP settings
-"let g:ctrlp_match_window='bottom,order:ttb'
-"let g:ctrlp_switch_buffer=0
-"let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
+let g:ctrlp_match_window='bottom,order:ttb'
+let g:ctrlp_switch_buffer=0
+let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
 let g:ctrlp_working_path_mode = "ra"
-
-" powerline stuff
-set laststatus=2
-set encoding=utf-8
-set t_Co=256
-let g:Powerline_symbols='fancy'
 
 " backup stuff
 set nobackup
@@ -94,3 +91,6 @@ nnoremap <C-o> :bnext<CR>
 nnoremap <C-i> :bprevious<CR>
 
 set backspace=2
+
+" airline
+set laststatus=2
