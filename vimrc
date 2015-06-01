@@ -40,6 +40,11 @@ filetype plugin on
 
 " colors
 syntax enable
+
+" solarized
+let g:solarized_termtrans=1
+let g:solarized_visibility="high"
+let g:solarize_contrast="high"
 set background=dark
 colorscheme solarized
 
