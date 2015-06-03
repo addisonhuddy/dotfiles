@@ -81,7 +81,6 @@ let mapleader=","
 " CtrlP settings
 let g:ctrlp_match_window='bottom,order:ttb'
 let g:ctrlp_switch_buffer=0
-let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
 let g:ctrlp_working_path_mode = "ra"
 
 " backup stuff
@@ -99,3 +98,11 @@ set backspace=2
 
 " airline
 set laststatus=2
+let g:airline_theme = 'powerlineish'
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#fnamemod=':t'
+
+" window management
+nnoremap <C-c> :bp\|bd #<CR>
