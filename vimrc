@@ -32,6 +32,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-endwise'
 Plugin 'majutsushi/tagbar'
 Plugin 'pangloss/vim-javascript'
+Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Plugin 'bling/vim-airline'
 
 call vundle#end()
@@ -42,12 +43,13 @@ filetype plugin on
 " colors
 syntax enable
 
-" solarized
-let g:solarized_termtrans=1
-let g:solarized_visibility="high"
-let g:solarize_contrast="high"
+" colorscheme
+" let g:solarized_termtrans=1
+" let g:solarized_visibility="high"
+" let g:solarize_contrast="high"
+
 set background=dark
-colorscheme solarized
+colorscheme tomorrow-night
 
 " indentation
 set expandtab
