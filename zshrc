@@ -11,7 +11,7 @@ alias 6300="cd ~/Dropbox/GT/2015_Spring/CS6300"
 alias code="cd ~/Dropbox/codebox"
 alias gittrends="cd ~/Dropbox/codebox/gittrends"
 alias gmacs='open -a /Applications/Emacs.app $1'
-
+alias mininet='ssh -p 3022 mininet@127.0.0.1'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -41,12 +41,11 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/bin:$PATH"
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 chruby ruby-2.2.2
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home
-
-export PATH=$PATH:/usr/local/go/bin
-export GOPATH=$HOME/go

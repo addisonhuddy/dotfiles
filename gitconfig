@@ -20,7 +20,7 @@
   ui = auto
   branch = auto
 [core]
-	excludesfile = /Users/pivotal/.gitignore_global
+	excludesfile = /Users/pivotal/.gitignore
 	editor = /usr/bin/vim
 	autocrlf = input
 [credential]

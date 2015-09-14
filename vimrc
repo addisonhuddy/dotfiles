@@ -34,7 +34,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'pangloss/vim-javascript'
 Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Plugin 'bling/vim-airline'
-
+Plugin 'jiangmiao/auto-pairs'
 call vundle#end()
 
 " filetype
