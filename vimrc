@@ -32,7 +32,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-endwise'
 Plugin 'majutsushi/tagbar'
 Plugin 'pangloss/vim-javascript'
-Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Plugin 'morhetz/gruvbox'
 Plugin 'bling/vim-airline'
 Plugin 'jiangmiao/auto-pairs'
 call vundle#end()
@@ -49,7 +49,7 @@ syntax enable
 " let g:solarize_contrast="high"
 
 set background=dark
-colorscheme tomorrow-night
+colorscheme gruvbox
 
 " indentation
 set expandtab
