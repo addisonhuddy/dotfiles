@@ -12,6 +12,12 @@ alias code="cd ~/Dropbox/codebox"
 alias gittrends="cd ~/Dropbox/codebox/gittrends"
 alias gmacs='open -a /Applications/Emacs.app $1'
 alias mininet='ssh -p 3022 mininet@127.0.0.1'
+alias gh="cd ~/Dropbox/codebox/go"
+alias ghs="cd ~/Dropbox/codebox/go/src/github.com"
+# don't overwrite system vim
+alias vim="/usr/local/Cellar/vim/7.4.898/bin/vim"
+#highlight the matching word in different color
+export GREP_OPTIONS="--color=auto"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -41,11 +47,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-export GOPATH=$HOME/go
+export GOPATH=$HOME/Dropbox/codebox/go
 export PATH=$PATH:$GOPATH/bin
 
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-chruby ruby-2.2.2
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
+[[ -s $BASE16_SHELL  ]] && source $BASE16_SHELL

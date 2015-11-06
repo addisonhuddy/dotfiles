@@ -26,15 +26,16 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'Yggdroot/indentLine'
 Plugin 'fatih/vim-go'
 Plugin 'klen/python-mode'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-endwise'
 Plugin 'majutsushi/tagbar'
 Plugin 'pangloss/vim-javascript'
-Plugin 'morhetz/gruvbox'
 Plugin 'bling/vim-airline'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'elzr/vim-json'
+Plugin 'chriskempson/base16-vim'
 call vundle#end()
 
 " filetype
@@ -43,13 +44,9 @@ filetype plugin on
 " colors
 syntax enable
 
-" colorscheme
-" let g:solarized_termtrans=1
-" let g:solarized_visibility="high"
-" let g:solarize_contrast="high"
-
+let base16colorspace=256
 set background=dark
-colorscheme gruvbox
+colorscheme base16-default
 
 " indentation
 set expandtab
@@ -62,6 +59,7 @@ set nowrap
 
 " folding
 let g:vim_markdown_folding_disabled=1
+set foldlevelstart=20
 
 " python
 let g:pymode_rope=0
@@ -110,3 +108,9 @@ let g:airline#extensions#tabline#fnamemod=':t'
 " encoding
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
+
+" get rid of beeps
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+  autocmd GUIEnter * set visualbell t_vb=
+endif
