@@ -33,9 +33,9 @@ Plugin 'majutsushi/tagbar'
 Plugin 'pangloss/vim-javascript'
 Plugin 'bling/vim-airline'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'elzr/vim-json'
 Plugin 'chriskempson/base16-vim'
+Plugin 'rosenfeld/conque-term'
 call vundle#end()
 
 " filetype
@@ -113,4 +113,10 @@ set fileencoding=utf-8  " The encoding written to file.
 set noerrorbells visualbell t_vb=
 if has('autocmd')
   autocmd GUIEnter * set visualbell t_vb=
+endif
+
+if match(getcwd(), "/pgsql") >=0 ||  match(getcwd(), "/postgresql") >= 0
+  set cinoptions=(0
+  set tabstop=4
+  set shiftwidth=4
 endif

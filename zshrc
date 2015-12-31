@@ -14,6 +14,8 @@ alias gmacs='open -a /Applications/Emacs.app $1'
 alias mininet='ssh -p 3022 mininet@127.0.0.1'
 alias gh="cd ~/Dropbox/codebox/go"
 alias ghs="cd ~/Dropbox/codebox/go/src/github.com"
+alias tmux="TERM=screen-256color-bce tmux"
+
 # don't overwrite system vim
 alias vim="/usr/local/Cellar/vim/7.4.898/bin/vim"
 #highlight the matching word in different color
@@ -54,3 +56,6 @@ export PATH=$PATH:$GOPATH/bin
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
 [[ -s $BASE16_SHELL  ]] && source $BASE16_SHELL
+
+# Anaconda
+export PATH="$HOME/anaconda/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
