@@ -7,17 +7,15 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="wedisagree"
 
-alias 6300="cd ~/Dropbox/GT/2015_Spring/CS6300"
 alias code="cd ~/Dropbox/codebox"
-alias gittrends="cd ~/Dropbox/codebox/gittrends"
+alias 8803="cd /Users/pivotal/Dropbox/GT/2016_Spring/CS8803"
 alias gmacs='open -a /Applications/Emacs.app $1'
-alias mininet='ssh -p 3022 mininet@127.0.0.1'
 alias gh="cd ~/Dropbox/codebox/go"
 alias ghs="cd ~/Dropbox/codebox/go/src/github.com"
 alias tmux="TERM=screen-256color-bce tmux"
 
 # don't overwrite system vim
-alias vim="/usr/local/Cellar/vim/7.4.898/bin/vim"
+# alias vim="/usr/local/Cellar/vim/7.4.898/bin/vim"
 #highlight the matching word in different color
 export GREP_OPTIONS="--color=auto"
 # Example aliases
@@ -58,4 +56,4 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
 [[ -s $BASE16_SHELL  ]] && source $BASE16_SHELL
 
 # Anaconda
-export PATH="$HOME/anaconda/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
+ export PATH="$HOME/anaconda/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"

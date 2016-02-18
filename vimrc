@@ -3,6 +3,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+set shell=/bin/zsh
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -23,7 +25,6 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'Yggdroot/indentLine'
 Plugin 'fatih/vim-go'
 Plugin 'klen/python-mode'
 Plugin 'mattn/emmet-vim'
@@ -31,11 +32,14 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-endwise'
 Plugin 'majutsushi/tagbar'
 Plugin 'pangloss/vim-javascript'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'elzr/vim-json'
 Plugin 'chriskempson/base16-vim'
 Plugin 'rosenfeld/conque-term'
+Plugin 'tmhedberg/matchit'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 call vundle#end()
 
 " filetype
@@ -59,6 +63,7 @@ set nowrap
 
 " folding
 let g:vim_markdown_folding_disabled=1
+set foldmethod=syntax
 set foldlevelstart=20
 
 " python
@@ -99,7 +104,7 @@ set backspace=2
 
 " airline
 set laststatus=2
-let g:airline_theme = 'powerlineish'
+let g:airline_theme = 'base16'
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -115,8 +120,13 @@ if has('autocmd')
   autocmd GUIEnter * set visualbell t_vb=
 endif
 
+" Postgres development formatting
 if match(getcwd(), "/pgsql") >=0 ||  match(getcwd(), "/postgresql") >= 0
   set cinoptions=(0
   set tabstop=4
   set shiftwidth=4
 endif
+
+
+" better support for multi-cursor
+set selection=inclusive
